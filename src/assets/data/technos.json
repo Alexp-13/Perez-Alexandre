@@ -1,0 +1,180 @@
+[
+    {
+        "category": "Programming Languages",
+        "techs": [
+            {
+                "name": "C++",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+            },
+            {
+                "name": "Python",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+            },
+            {
+                "name": "Java",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+            },
+            {
+                "name": "JavaScript",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+            },
+            {
+                "name": "TypeScript",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+            },
+            {
+                "name": "HTML",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+            },
+            {
+                "name": "CSS",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+            },
+            {
+                "name": "Bash",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg"
+            }
+        ]
+    },
+    {
+        "category": "Frameworks",
+        "techs": [
+            {
+                "name": "Tailwind CSS",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+            },
+            {
+                "name": "Laravel",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+            },
+            {
+                "name": "React",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            },
+            {
+                "name": "Angular",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+            },
+            {
+                "name": "Express",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+            },
+            {
+                "name": "FastAPI",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+            },
+            {
+                "name": "Ionic",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ionic/ionic-original.svg"
+            },
+            {
+                "name": "Qt",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/qt/qt-original.svg"
+            },
+            {
+                "name": "Pygame",
+                "logo": "https://cdn.simpleicons.org/pygame"
+            },
+            {
+                "name": "Stable Baselines 3",
+                "logo": "https://raw.githubusercontent.com/DLR-RM/stable-baselines3/master/docs/_static/logo.png"
+            }
+        ]
+    },
+    {
+        "category": "Libraries",
+        "techs": [
+            {
+                "name": "PyTorch",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
+            },
+            {
+                "name": "OpenGL",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opengl/opengl-original.svg"
+            },
+            {
+                "name": "Box2D",
+                "logo": "https://cdn.simpleicons.org/box2d"
+            },
+            {
+                "name": "Pybind11",
+                "logo": "https://raw.githubusercontent.com/pybind/pybind11/master/docs/pybind11-logo.png"
+            },
+            {
+                "name": "LangGraph",
+                "logo": "https://cdn.simpleicons.org/langgraph"
+            },
+            {
+                "name": "Langfuse",
+                "logo": "https://avatars.githubusercontent.com/u/119274645?s=200&v=4"
+            }
+        ]
+    },
+    {
+        "category": "Tools & DevOps",
+        "techs": [
+            {
+                "name": "Git",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+            },
+            {
+                "name": "Docker",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+            },
+            {
+                "name": "Node.js",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+            },
+            {
+                "name": "Bun",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bun/bun-original.svg"
+            },
+            {
+                "name": "Vite",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+            },
+            {
+                "name": "Webpack",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webpack/webpack-original.svg"
+            },
+            {
+                "name": "CMake",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cmake/cmake-original.svg"
+            },
+            {
+                "name": "Makefile",
+                "logo": "https://cdn.simpleicons.org/cmake"
+            },
+            {
+                "name": "Grafana",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg"
+            },
+            {
+                "name": "Open WebUI",
+                "logo": "https://avatars.githubusercontent.com/u/158137808?s=200&v=4"
+            }
+        ]
+    },
+    {
+        "category": "Databases",
+        "techs": [
+            {
+                "name": "MySQL",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+            },
+            {
+                "name": "PostgreSQL",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+            }
+        ]
+    },
+    {
+        "category": "Game Engines",
+        "techs": [
+            {
+                "name": "Unity",
+                "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg"
+            }
+        ]
+    }
+]

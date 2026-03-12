@@ -1,0 +1,124 @@
+[
+    {
+        "id": "jeu-pixelart-devart-2026",
+        "title": "Jeu pixelArt devart 2026",
+        "description": "Dans le cadre du **hackathon Devart** sur le thème 'Écho', nous avons développé en **32 heures** un **jeu de plateforme 2D** basé sur la **résonance temporelle**. Le joueur doit alterner entre deux époques : le passé, où il incarne un **épéiste** capable de modifier l'environnement, et le présent, où il joue un **mage** subissant les conséquences de ses actes passés. Chaque action dans le passé crée un **écho** qui transforme le futur pour permettre la progression.",
+        "studyLevel": "3 eme année BUT",
+        "techStack": [
+            "Unity"
+        ],
+        "githubUrl": "",
+        "otherUrl": [],
+        "videoUrl": [],
+        "imageUrl": [
+            "assets/img/projects/devart.png",
+            "assets/img/projects/devart_2.png",
+            "assets/img/projects/devart_3.png",
+            "assets/img/projects/devart_4.png"
+        ]
+    },
+    {
+        "id": "sae-awale",
+        "title": "SAÉ Awalé",
+        "description": "Dans le cadre de ma deuxième année de BUT, j'ai participé au développement en équipe d'une adaptation numérique du jeu traditionnel de l'Awalé en utilisant **Python** et la bibliothèque **Pygame**. Ce projet a constitué une étape clé dans ma compréhension des architectures logicielles dédiées aux jeux vidéo, notamment à travers la mise en place d'une **boucle de jeu** pour la gestion des événements, de la logique et du rendu graphique en temps réel.\n\nL'un des défis majeurs de cette réalisation a été la conception d'une **intelligence artificielle** permettant de jouer contre l'ordinateur. Pour cela, j'ai implémenté un **algorithme Min-Max** optimisé par l'**élagage alpha-beta** (pruning), ce qui a permis de créer un adversaire capable d'anticiper les coups et de proposer un niveau de stratégie avancé. Cette expérience m'a non seulement permis de renforcer mes compétences en **algorithmie** et en développement collaboratif, mais elle m'a également offert une première immersion concrète dans la structuration complexe d'un système de jeu interactif.",
+        "studyLevel": "2 eme année BUT",
+        "techStack": [
+            "python",
+            "pygame"
+        ],
+        "githubUrl": "",
+        "otherUrl": [],
+        "videoUrl": [],
+        "imageUrl": [
+            "assets/img/projects/awale.png"
+        ]
+    },
+    {
+        "id": "sae-simulation-2d-machine-learning",
+        "title": "SAÉ Simulation 2d et machine learning",
+        "description": "Dans le cadre de ma troisième année de BUT, j'ai conçu et développé de bout en bout un écosystème de conduite autonome basé sur l'**apprentissage par renforcement**. L'objectif était d'entraîner une **intelligence artificielle** à piloter une Formule 1 sur des circuits générés aléatoirement, en s'appuyant sur une simulation physique réaliste et performante. Pour répondre aux exigences de calcul massif requises par le **machine learning**, j'ai dû concevoir une **architecture hybride** fortement optimisée.\n\nLe moteur physique et le rendu graphique ont été entièrement développés en **C++** en intégrant les bibliothèques **Box2D** et **OpenGL**, ce qui a permis de gérer finement des comportements complexes tels que la détection continue de collisions à haute vitesse et l'adhérence latérale. L'entraînement de l'agent s'est fait en **Python** via l'algorithme **PPO** de **Stable Baselines 3**. Un des défis technique a été la communication entre ces deux langages : plutôt que d'utiliser des sockets réseaux trop lents, j'ai mis en place un pont natif avec **Pybind11**. Cette solution a permis un **partage de mémoire direct**, rendant possible la simulation de dizaines de milliers d'étapes d'apprentissage en un temps record. Pour couronner le tout, j'ai implémenté mathématiquement le **réseau de neurones** (inférence) directement en **C++** afin de pouvoir exécuter l'IA en temps réel sans dépendre de Python.",
+        "studyLevel": "3 eme année BUT",
+        "techStack": [
+            "C++",
+            "Box2d",
+            "OpenGL",
+            "Pybind11",
+            "Python",
+            "Stable Baselines 3",
+            "PyTorch"
+        ],
+        "githubUrl": "https://github.com/Alexp-13/SAE",
+        "otherUrl": [
+            "src/assets/other/Rapport_technique.pdf"
+        ],
+        "videoUrl": [],
+        "imageUrl": []
+    },
+    {
+        "id": "carte-gps",
+        "title": "Carte GPS",
+        "description": "Dans le cadre de ma première année de BUT, j'ai développé individuellement une application de bureau en **C++** dotée d'une interface graphique **Qt**, dont l'objectif était de calculer et d'optimiser les temps de trajet routiers entre 99 villes françaises. Le défi principal consistait à exploiter un jeu de données géographiques incomplet (fichiers CSV) modélisé sous forme de **graphe pondéré**, où seules certaines liaisons directes entre les villes étaient fournies.\n\nPour résoudre ce problème de routage, j'ai implémenté l'**algorithme de Floyd-Warshall**. Cette approche mathématique m'a permis de calculer efficacement l'ensemble des **plus courts chemins** du graphe, et ainsi de déduire avec précision le temps de route minimal entre n'importe quelle paire de villes, même en l'absence de connexion directe dans les données initiales.\n\nAu-delà de la simple consultation des temps de trajet ou de la génération de matrices de distances, j'ai enrichi l'interface graphique de fonctionnalités avancées d'aide à la décision logistique. L'application permet notamment d'afficher visuellement les itinéraires sur une carte, de calculer l'**ordre de visite optimal** pour un ensemble de destinations (variante du **problème du voyageur de commerce**), et de déterminer l'emplacement géographique idéal pour un dépôt devant desservir plusieurs villes tout en minimisant les distances.",
+        "studyLevel": "1e année BUT",
+        "techStack": [
+            "C++",
+            "Qt"
+        ],
+        "githubUrl": "",
+        "otherUrl": [],
+        "videoUrl": [],
+        "imageUrl": [
+            "assets/img/projects/GPS_map.png"
+        ]
+    },
+    {
+        "id": "memory-game",
+        "title": "memory Game",
+        "description": "Dans le cadre de ma deuxième année de BUT, j'ai conçu et développé une application web de \"Memory Game\" interactive en utilisant la bibliothèque **React**. Ce projet a été l'occasion d'approfondir la conception d'interfaces modulaires basées sur des **composants réutilisables** et de maîtriser la **gestion d'états** complexes via les **Hooks** (**useState**, **useEffect**).\n\nL'application intègre une logique de jeu complète, incluant la gestion des paires, un **système de score dynamique** et différents **niveaux de difficulté** ajustant la taille de la grille. J'ai porté une attention particulière à l'**expérience utilisateur (UX)** en implémentant des animations fluides pour le retournement des cartes et une interface totalement **responsive**. Le projet utilise également l'API **LocalStorage** pour sauvegarder les meilleurs scores, ajoutant ainsi une dimension persistante et compétitive au jeu.",
+        "studyLevel": "2 eme année BUT",
+        "techStack": [
+            "Vite",
+            "React"
+        ],
+        "githubUrl": "",
+        "otherUrl": [],
+        "videoUrl": [],
+        "imageUrl": [
+            "assets/img/projects/memory.png",
+            "assets/img/projects/memory_1.png"
+        ]
+    },
+    {
+        "id": "application-gestion-hospitaliere",
+        "title": "Application de Gestion Hospitalière",
+        "description": "L'essentiel du travail a résidé dans la conception d'une **base de données relationnelle** complexe et sa manipulation via l'**ORM Eloquent** pour lier différentes entités (Hôpitaux, Médecins, Unités, Chambres, Patients et Admissions). J'ai implémenté la logique métier au travers de contrôleurs gérant l'ensemble des opérations **CRUD**, tout en intégrant des fonctionnalités avancées telles que le **Soft Delete** (suppression logique) pour la traçabilité des données. Enfin, le back-end a été sécurisé par un système d'**authentification** et de **gestion des rôles** limitant l'accès aux requêtes selon le profil de l'utilisateur.",
+        "studyLevel": "2 eme année BUT",
+        "techStack": [
+            "PHP",
+            "Laravel",
+            "MySQL",
+            "Docker"
+        ],
+        "githubUrl": "",
+        "otherUrl": [],
+        "videoUrl": [],
+        "imageUrl": []
+    },
+    {
+        "id": "paint",
+        "title": "Paint",
+        "description": "Dans le cadre de ma deuxième année de BUT, j'ai développé une application de **dessin vectoriel** minimaliste inspirée de Paint. Entièrement codée en **Java**, cette application propose une palette complète d'outils interactifs tels qu'un pinceau, un pot de peinture et une gomme. J'ai également implémenté la prise en charge du tracé de multiples formes géométriques (triangles, cercles, ellipses, polygones) ainsi que des **courbes de Bézier** et des lignes brisées, avec la possibilité de personnaliser l'épaisseur du trait et les couleurs.\n\nL'innovation principale de ce projet a été la conception et l'implémentation de mon propre **format de fichier vectoriel**, nommé **'AVF'** (Alexandre Vectorial Format). Ce format sur mesure permet de **sérialiser**, sauvegarder et recharger les espaces de travail de manière optimisée, en conservant les propriétés mathématiques des dessins plutôt que de simples grilles de pixels.",
+        "studyLevel": "2 eme année BUT",
+        "techStack": [
+            "Java",
+            "Javadoc"
+        ],
+        "githubUrl": "",
+        "otherUrl": [],
+        "videoUrl": [],
+        "imageUrl": [
+            "assets/img/projects/paint_1.png",
+            "assets/img/projects/paint_2.png",
+            "assets/img/projects/paint_3.png"
+        ]
+    }
+]
