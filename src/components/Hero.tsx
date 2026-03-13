@@ -246,7 +246,7 @@ function Hero() {
             les systèmes d'
             <span className="text-accent font-medium">intelligence artificielle</span>.
           </p>
-          <p className="text-text-muted text-base leading-relaxed font-mono text-xs tracking-wider">
+          <p className="text-text-muted text-base leading-relaxed font-mono text-sm tracking-wider">
             {">"} Conception de systèmes robustes · LLM · Agents autonomes
           </p>
         </motion.div>

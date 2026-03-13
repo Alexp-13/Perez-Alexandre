@@ -38,7 +38,7 @@ function NeuralNetworkCanvas({ className }: { className?: string }) {
           radius: 0,
           pulsePhase: Math.random() * Math.PI * 2,
           pulseSpeed: Math.random() * 0.015 + 0.004,
-          brightness: Math.random() * 0.4 + 0.45,
+          brightness: Math.random() * 0.3 + 0.65,
         });
       }
       nodesRef.current = nodes;
@@ -173,7 +173,7 @@ function NeuralNetworkCanvas({ className }: { className?: string }) {
                 ? 1 + ((1 - distToMouse / MOUSE_RADIUS) ** 2) * 3
                 : 1;
 
-            const finalAlpha = Math.min(alpha * 0.35 * mouseBoost, 0.8);
+            const finalAlpha = Math.min(alpha * 0.6 * mouseBoost, 0.9);
 
             // Gradient line for fancy effect
             if (finalAlpha > 0.04) {
