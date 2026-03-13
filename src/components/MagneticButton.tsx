@@ -9,10 +9,12 @@ function MagneticButton({
   children,
   className = "",
   strength = 0.35,
+  enabled = true,
 }: {
   children: React.ReactNode;
   className?: string;
   strength?: number;
+  enabled?: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const posRef = useRef({ x: 0, y: 0 });
@@ -39,6 +41,12 @@ function MagneticButton({
     const el = ref.current;
     if (!el) return;
 
+    // If magnetic behavior is disabled, ensure no transform and skip listeners/animation
+    if (!enabled) {
+      el.style.transform = "";
+      return;
+    }
+
     el.addEventListener("mousemove", handleMouseMove);
     el.addEventListener("mouseleave", handleMouseLeave);
 
@@ -59,7 +67,7 @@ function MagneticButton({
       el.removeEventListener("mouseleave", handleMouseLeave);
       cancelAnimationFrame(rafRef.current);
     };
-  }, [handleMouseMove, handleMouseLeave]);
+  }, [handleMouseMove, handleMouseLeave, enabled]);
 
   return (
     <motion.div

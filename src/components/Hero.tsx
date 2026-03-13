@@ -2,8 +2,9 @@ import NeuralNetworkCanvas from "./NeuralNetworkCanvas";
 import AuroraBackground from "./AuroraBackground";
 import MagneticButton from "./MagneticButton";
 import TextScramble from "./TextScramble";
-import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
-import { useRef, useEffect, useState } from "react";
+import TypeWriter from "./TypeWriter";
+import { motion } from "framer-motion";
+import { useRef, useState } from "react";
 
 /* ── letter-by-letter reveal with 3D flip ── */
 const letterVariants = {
@@ -68,7 +69,6 @@ function FloatingBadge() {
         animate={{ y: [0, -4, 0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
         className="inline-flex items-center gap-2.5 font-mono text-[11px] md:text-xs tracking-[0.35em] uppercase px-5 py-2.5 border border-accent/20 rounded-full bg-accent/[0.06] backdrop-blur-md shadow-lg shadow-accent/5 hover:border-accent/50 hover:shadow-accent/20 transition-all duration-500"
-        data-cursor-hover
       >
         <span className="relative flex h-2 w-2">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-60" />
@@ -147,33 +147,17 @@ function FloatingShapes() {
   );
 }
 
+/* ── typing animation strings ── */
+const typedStrings = [
+  { prefix: "Un développeur ", highlight: "Fullstack", highlightClass: "text-accent" },
+  { prefix: "Un développeur ", highlight: "IA", highlightClass: "text-accent-light" },
+  { prefix: "Un développeur ", highlight: "Backend", highlightClass: "text-purple-400" },
+  { prefix: "Votre prochain ", highlight: "collègue", highlightClass: "text-accent-glow" },
+];
+
 /* ── main hero ── */
 function Hero() {
   const containerRef = useRef<HTMLElement>(null);
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  // Smooth spring for parallax
-  const springX = useSpring(mouseX, { stiffness: 50, damping: 20 });
-  const springY = useSpring(mouseY, { stiffness: 50, damping: 20 });
-
-  // Transform mouse position to subtle parallax movement
-  const bgX = useTransform(springX, [-1, 1], [15, -15]);
-  const bgY = useTransform(springY, [-1, 1], [15, -15]);
-  const contentX = useTransform(springX, [-1, 1], [8, -8]);
-  const contentY = useTransform(springY, [-1, 1], [8, -8]);
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      const x = (e.clientX / window.innerWidth) * 2 - 1;
-      const y = (e.clientY / window.innerHeight) * 2 - 1;
-      mouseX.set(x);
-      mouseY.set(y);
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, [mouseX, mouseY]);
 
   return (
     <section
@@ -187,7 +171,7 @@ function Hero() {
       </div>
 
       {/* Neural Network Background — with parallax */}
-      <motion.div className="absolute inset-0 z-[1]" style={{ x: bgX, y: bgY }}>
+      <motion.div className="absolute inset-0 z-[1]">
         <NeuralNetworkCanvas />
       </motion.div>
 
@@ -205,10 +189,7 @@ function Hero() {
       <FloatingShapes />
 
       {/* Content with parallax */}
-      <motion.div
-        className="relative z-10 text-center px-6 max-w-5xl"
-        style={{ x: contentX, y: contentY }}
-      >
+      <motion.div className="relative z-10 text-center px-6 max-w-5xl">
         {/* Floating badge */}
         <FloatingBadge />
 
@@ -233,6 +214,22 @@ function Hero() {
             background: "linear-gradient(90deg, transparent, var(--color-accent), var(--color-accent-light), var(--color-accent), transparent)",
           }}
         />
+
+        {/* Typing animation */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.0, ease: [0.16, 1, 0.3, 1] }}
+          className="mt-5 h-10 flex items-center justify-center"
+        >
+          <TypeWriter
+            strings={typedStrings}
+            typeSpeed={30}
+            backSpeed={30}
+            pauseDuration={1500}
+            className="text-xl md:text-2xl font-medium text-text-secondary"
+          />
+        </motion.div>
 
         {/* Bio text */}
         <motion.div
@@ -264,10 +261,9 @@ function Hero() {
         transition={{ duration: 0.8, delay: 1.5, ease: "easeOut" }}
         className="absolute bottom-28 left-1/2 -translate-x-1/2 z-10 flex items-center justify-center gap-4 flex-wrap"
       >
-        <MagneticButton strength={0.3}>
+        <MagneticButton strength={0.3} enabled={false}>
           <a
             href="#projects"
-            data-cursor-hover
             className="group relative flex items-center gap-3 px-8 py-3.5 rounded-2xl overflow-hidden text-sm font-semibold text-white transition-all duration-500 hover:shadow-2xl hover:shadow-accent/50 hover:scale-[1.03]"
             style={{ background: "linear-gradient(135deg, #6366f1 0%, #7c3aed 50%, #a855f7 100%)" }}
           >
@@ -280,10 +276,9 @@ function Hero() {
           </a>
         </MagneticButton>
 
-        <MagneticButton strength={0.3}>
+        <MagneticButton strength={0.3} enabled={false}>
           <a
             href="#skills"
-            data-cursor-hover
             className="group relative px-8 py-3.5 border border-border/50 hover:border-accent/50 text-text-secondary hover:text-text-primary rounded-2xl transition-all duration-300 backdrop-blur-sm bg-white/[0.02] text-sm font-medium hover:bg-white/[0.06] overflow-hidden"
           >
             <span className="relative z-10">Compétences</span>
@@ -291,10 +286,9 @@ function Hero() {
           </a>
         </MagneticButton>
 
-        <MagneticButton strength={0.3}>
+        <MagneticButton strength={0.3} enabled={false}>
           <a
             href="#about"
-            data-cursor-hover
             className="group relative px-8 py-3.5 border border-border/50 hover:border-accent/50 text-text-secondary hover:text-text-primary rounded-2xl transition-all duration-300 backdrop-blur-sm bg-white/[0.02] text-sm font-medium hover:bg-white/[0.06] overflow-hidden"
           >
             <span className="relative z-10">À propos</span>
