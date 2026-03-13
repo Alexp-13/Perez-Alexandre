@@ -86,7 +86,7 @@ function Navbar() {
             </a>
           ))}
           <a
-            href="src/assets/other/Cv-perez-alexandre.pdf"
+            href="/assets/other/Cv-perez-alexandre.pdf"
             target="_blank"
             rel="noopener noreferrer"
             data-cursor-hover

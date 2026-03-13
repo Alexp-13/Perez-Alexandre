@@ -164,7 +164,7 @@ function Contact() {
           </MagneticButton>
           <MagneticButton strength={0.2}>
             <a
-              href="src/assets/other/Cv-perez-alexandre.pdf"
+              href="/assets/other/Cv-perez-alexandre.pdf"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor-hover
