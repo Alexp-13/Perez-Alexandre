@@ -75,7 +75,7 @@ function MagneticPhoto() {
         className="w-64 h-72 md:w-80 md:h-[22rem] rounded-2xl overflow-hidden border border-border/40 shadow-2xl shadow-black/40 relative"
       >
         <img
-          src="src/assets/img/moi.jpg"
+          src="/assets/img/moi.jpg"
           alt="Alexandre Perez"
           className="w-full h-full object-cover grayscale-[50%] group-hover:grayscale-0 transition-all duration-1000 scale-[1.08] group-hover:scale-100"
         />

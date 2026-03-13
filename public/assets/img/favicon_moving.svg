@@ -1,0 +1,68 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes pulse { 0%,100%{opacity:0.5} 50%{opacity:1} }
+      .ap { animation: pulse 2s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="400" height="400" rx="12" fill="#0d0d1a"/>
+
+  <!-- Grid -->
+  <g opacity="0.08" stroke="#6366f1" stroke-width="0.7">
+    <line x1="0" y1="60" x2="400" y2="60"/><line x1="0" y1="120" x2="400" y2="120"/>
+    <line x1="0" y1="180" x2="400" y2="180"/><line x1="0" y1="240" x2="400" y2="240"/>
+    <line x1="0" y1="300" x2="400" y2="300"/><line x1="0" y1="360" x2="400" y2="360"/>
+    <line x1="60" y1="0" x2="60" y2="400"/><line x1="120" y1="0" x2="120" y2="400"/>
+    <line x1="180" y1="0" x2="180" y2="400"/><line x1="240" y1="0" x2="240" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/><line x1="360" y1="0" x2="360" y2="400"/>
+  </g>
+
+  <!-- AP outlined text -->
+  <text
+    x="200" y="230"
+    text-anchor="middle"
+    font-family="sans-serif"
+    font-size="140"
+    font-weight="900"
+    fill="none"
+    stroke="rgba(99,102,241,0.6)"
+    stroke-width="2"
+    class="ap"
+  >AP</text>
+
+  <!-- Orbiting dots -->
+  <circle fill="#6366f1" r="5">
+    <animate attributeName="cx" dur="2s" repeatCount="indefinite"
+      values="260;200;140;200;260"/>
+    <animate attributeName="cy" dur="2s" repeatCount="indefinite"
+      values="200;140;200;260;200"/>
+  </circle>
+  <circle fill="#6366f1" r="5">
+    <animate attributeName="cx" dur="2s" repeatCount="indefinite" begin="0.15s"
+      values="140;200;260;200;140"/>
+    <animate attributeName="cy" dur="2s" repeatCount="indefinite" begin="0.15s"
+      values="200;260;200;140;200"/>
+  </circle>
+  <circle fill="#6366f1" r="5">
+    <animate attributeName="cx" dur="2s" repeatCount="indefinite" begin="0.3s"
+      values="200;260;200;140;200"/>
+    <animate attributeName="cy" dur="2s" repeatCount="indefinite" begin="0.3s"
+      values="140;200;260;200;140"/>
+  </circle>
+
+  <!-- Progress bar track -->
+  <rect x="104" y="300" width="192" height="2" rx="1" fill="rgba(255,255,255,0.1)"/>
+  <!-- Progress bar fill -->
+  <rect x="104" y="300" width="192" height="2" rx="1">
+    <animate attributeName="width" from="0" to="192" dur="2s" fill="freeze"
+      calcMode="spline" keySplines="0.33 0 0.66 1"/>
+    <animate attributeName="fill" from="#6366f1" to="#c084fc" dur="2s" fill="freeze"/>
+  </rect>
+
+  <!-- Percentage text -->
+  <text x="200" y="324" text-anchor="middle"
+    font-family="monospace" font-size="11"
+    fill="rgba(255,255,255,0.4)" letter-spacing="4">100%</text>
+</svg>
