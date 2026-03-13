@@ -186,7 +186,7 @@ function Contact() {
           className="mt-16 flex items-center justify-center gap-3"
         >
           <div className="h-px w-8 bg-accent/20" />
-          <span className="font-mono text-[10px] text-text-muted/40 tracking-[0.3em]">
+          <span className="font-mono text-[10px] text-[#A3B0FB] tracking-[0.3em]">
             OPEN TO OPPORTUNITIES
           </span>
           <div className="h-px w-8 bg-accent/20" />

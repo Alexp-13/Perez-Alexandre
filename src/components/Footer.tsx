@@ -20,9 +20,10 @@ function Footer() {
           className="mb-8 overflow-hidden"
         >
           <div
-            className="text-[4rem] md:text-[6rem] lg:text-[8rem] font-black leading-none select-none text-gradient opacity-20 hover:opacity-40 transition-opacity duration-700"
+            className="text-[4rem] md:text-[6rem] lg:text-[8rem] font-black leading-none select-none opacity-40 hover:opacity-70 transition-opacity duration-700"
             style={{
-              WebkitTextStroke: "2px rgba(99, 102, 241, 0.25)",
+              color: "#A3B0FB",
+              WebkitTextStroke: "2px #A3B0FB",
             }}
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
@@ -37,7 +38,7 @@ function Footer() {
         </motion.div>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-mono text-[11px] text-text-muted/60">
+          <p className="font-mono text-[11px] text-[#A3B0FB]">
             © {new Date().getFullYear()} Alexandre Perez — Crafted with React · Tailwind · Framer Motion · GSAP
           </p>
           <div className="flex items-center gap-6">
