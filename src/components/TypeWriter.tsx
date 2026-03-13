@@ -32,7 +32,7 @@ function TypeWriter({
   const [displayed, setDisplayed] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [stringIndex, setStringIndex] = useState(0);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   const currentString = strings[stringIndex];
   const fullText = currentString.prefix + currentString.highlight;
