@@ -73,11 +73,11 @@
             },
             {
                 "name": "Pygame",
-                "logo": "https://cdn.simpleicons.org/pygame"
+                "logo": "https://www.pygame.org/docs/_static/pygame_logo.svg"
             },
             {
                 "name": "Stable Baselines 3",
-                "logo": "https://raw.githubusercontent.com/DLR-RM/stable-baselines3/master/docs/_static/logo.png"
+                "logo": "https://stable-baselines3.readthedocs.io/en/master/_static/logo.png"
             }
         ]
     },
@@ -94,7 +94,7 @@
             },
             {
                 "name": "Box2D",
-                "logo": "https://cdn.simpleicons.org/box2d"
+                "logo": "https://box2d.org/images/logo.svg"
             },
             {
                 "name": "Pybind11",
