@@ -14,7 +14,7 @@ type ChatMessage = {
 
 const SUGGESTIONS = [
   "Resume-moi le profil d'Alexandre en 5 points.",
-  "Quels projets montrent le mieux ses competences frontend ?",
+  "Quels projets montrent le mieux ses competences backend ?",
   "Quelles technos maitrise-t-il concretement ?",
 ];
 

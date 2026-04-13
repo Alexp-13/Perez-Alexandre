@@ -1,4 +1,9 @@
 {
   "framework": "vite",
-  "devCommand": "bun run dev:vite"
+  "devCommand": "bun run dev:vite",
+  "functions": {
+    "api/chat.ts": {
+      "maxDuration": 300
+    }
+  }
 }
