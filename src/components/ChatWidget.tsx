@@ -306,12 +306,13 @@ export default function ChatWidget() {
         <button
           type="button"
           onClick={() => setIsOpen(true)}
-          className="group flex h-14 w-14 items-center justify-center rounded-full border border-accent/60 bg-accent/90 text-white shadow-[0_14px_40px_rgba(79,70,229,0.4)] transition-transform hover:scale-105 hover:bg-accent"
+          className="group flex h-16 items-center gap-3 rounded-full border border-accent/60 bg-accent/90 px-6 text-white shadow-[0_14px_40px_rgba(79,70,229,0.4)] transition-transform hover:scale-105 hover:bg-accent"
           aria-label="Ouvrir le chat"
         >
           <svg viewBox="0 0 24 24" className="h-6 w-6 fill-none stroke-current stroke-2" aria-hidden="true">
             <path d="M5 18L3 21l3.5-1.4A9 9 0 1012 3a9 9 0 00-7 15z" />
           </svg>
+          <span className="text-base font-semibold text-white">Assistant IA</span>
         </button>
       )}
     </div>
