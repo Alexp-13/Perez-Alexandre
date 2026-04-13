@@ -11,6 +11,7 @@ import CustomCursor from "./components/CustomCursor";
 import Preloader from "./components/Preloader";
 import SmoothScroll from "./components/SmoothScroll";
 import SectionDivider from "./components/SectionDivider";
+import ChatWidget from "./components/ChatWidget";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -42,6 +43,7 @@ function App() {
               <Contact />
             </main>
             <Footer />
+            <ChatWidget />
           </div>
         </SmoothScroll>
       )}
